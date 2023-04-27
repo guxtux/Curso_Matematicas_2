@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{sqsqsq}{rgb}{0.12549019607843137,0.12549019607843137,0.12549019607843137}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-9.78,
+xmax=9.780000000000006,
+ymin=-5.72,
+ymax=5.72,
+xtick={-9,-8,...,9},
+ytick={-5,-4,...,5},]
+\clip(-9.78,-5.72) rectangle (9.78,5.72);
+\fill[line width=2pt,color=sqsqsq] (-3,3) -- (2,4) -- (4,1) -- (3,-3) -- (-2,-2) -- cycle;
+\draw [shift={(-3,3)},line width=2pt,color=qqwuqq] (0,0) -- (11.309932474020215:0.6) arc (11.309932474020215:100.52078431387436:0.6) -- cycle;
+\draw [shift={(-2,-2)},line width=2pt,color=qqwuqq] (0,0) -- (101.30993247402021:0.6) arc (101.30993247402021:162.01266534793857:0.6) -- cycle;
+\draw [shift={(2,4)},line width=2pt,color=qqwuqq] (0,0) -- (-56.309932474020215:0.6) arc (-56.309932474020215:11.309932474020227:0.6) -- cycle;
+\draw [shift={(4,1)},line width=2pt,color=qqwuqq] (0,0) -- (-104.03624346792648:0.6) arc (-104.03624346792648:-60.4885014429097:0.6) -- cycle;
+\draw [shift={(3,-3)},line width=2pt,color=qqwuqq] (0,0) -- (168.6900675259798:0.6) arc (168.6900675259798:252.9622322043744:0.6) -- cycle;
+\draw [line width=2pt,color=sqsqsq] (-3,3)-- (2,4);
+\draw [line width=2pt,color=sqsqsq] (2,4)-- (4,1);
+\draw [line width=2pt,color=sqsqsq] (4,1)-- (3,-3);
+\draw [line width=2pt,color=sqsqsq] (3,-3)-- (-2,-2);
+\draw [line width=2pt,color=sqsqsq] (-2,-2)-- (-3,3);
+\draw [line width=2pt] (2,4)-- (3.4,4.28);
+\draw [line width=2pt] (4,1)-- (4.6,-0.06);
+\draw [line width=2pt] (3,-3)-- (2.62,-4.24);
+\draw [line width=2pt] (-2,-2)-- (-3.54,-1.5);
+\draw [line width=2pt] (-3,3)-- (-3.26,4.4);
+\begin{scriptsize}
+\draw[color=qqwuqq] (-2.5,4.01) node {$A$};
+\draw[color=qqwuqq] (-2.76,-1.07) node {$E$};
+\draw[color=qqwuqq] (2.8,3.77) node {$B$};
+\draw[color=qqwuqq] (4.16,0.13) node {$C$};
+\draw[color=qqwuqq] (2.06,-3.33) node {$D$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

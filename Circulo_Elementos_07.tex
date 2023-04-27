@@ -1,0 +1,20 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-4.3,-4) rectangle (8.22,6.3);
+\draw [line width=1.2pt,dash pattern=on 1pt off 1pt] (0,0) circle (2cm);
+\draw [shift={(0,0)},line width=2pt,color=qqqqff]  plot[domain=3.141592653589793:5.395207291363843,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+\begin{scriptsize}
+\draw [fill=uuuuuu] (0,0) circle (2pt);
+\draw [fill=black] (-2,0) circle (1pt);
+\draw [fill=black] (1.2619639312733133,-1.5515949974671883) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

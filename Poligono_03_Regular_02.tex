@@ -1,0 +1,40 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-4.3,
+xmax=15.26,
+ymin=-4,
+ymax=6.3,
+xtick={-4,-3,...,15},
+ytick={-4,-3,...,6},]
+\clip(-4.3,-4) rectangle (15.26,6.3);
+\fill[line width=2pt,color=zzttqq] (0,0) -- (2,0) -- (3,1.7320508075688774) -- (2,3.4641016151377553) -- (0,3.4641016151377557) -- (-1,1.732050807568879) -- cycle;
+\draw [shift={(1.0115578987075386,1.7120319397786867)},line width=2pt,color=qqwuqq] (0,0) -- (0.4813424884842337:0.6) arc (0.4813424884842337:60.57018431909116:0.6) -- cycle;
+\draw [line width=2pt,color=zzttqq] (0,0)-- (2,0);
+\draw [line width=2pt,color=zzttqq] (2,0)-- (3,1.7320508075688774);
+\draw [line width=2pt,color=zzttqq] (3,1.7320508075688774)-- (2,3.4641016151377553);
+\draw [line width=2pt,color=zzttqq] (2,3.4641016151377553)-- (0,3.4641016151377557);
+\draw [line width=2pt,color=zzttqq] (0,3.4641016151377557)-- (-1,1.732050807568879);
+\draw [line width=2pt,color=zzttqq] (-1,1.732050807568879)-- (0,0);
+\draw [line width=2pt] (0,3.4641016151377557)-- (2,0);
+\draw [line width=2pt] (2,3.4641016151377553)-- (1.0115578987075386,1.7120319397786867);
+\draw [line width=2pt] (1.0115578987075386,1.7120319397786867)-- (0,0);
+\draw [line width=2pt] (1.0115578987075386,1.7120319397786867)-- (1.96,1.72);
+\begin{scriptsize}
+\draw[color=qqwuqq] (1.66,2.29) node {$C$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

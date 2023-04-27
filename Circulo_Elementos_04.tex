@@ -1,0 +1,18 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-4.24,-5.12) rectangle (8.28,6.32);
+\draw [line width=2pt] (3,2) circle (2.2840315234251913cm);
+\draw [line width=2pt,color=qqqqff] (0.7301778625231852,1.7456233811448398)-- (5.267958315569716,2.27049044130648);
+\draw (2.54,2.94) node[anchor=north west] {d};
+\begin{scriptsize}
+\draw [fill=black] (3,2) circle (1pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{ubqqys}{rgb}{0.29411764705882354,0,0.5098039215686274}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-6.259999999999999,
+xmax=13.30000000000001,
+ymin=-4.79,
+ymax=5.51,
+xtick={-6,-5,...,13},
+ytick={-4,-3,...,5},]
+\clip(-6.26,-4.79) rectangle (13.3,5.51);
+\fill[line width=2pt,color=ubqqys] (0,0) -- (6,0) -- (6,2) -- (0,2) -- cycle;
+\draw [line width=2pt,color=ubqqys] (0,0)-- (6,0);
+\draw [line width=2pt,color=ubqqys] (6,0)-- (6,2);
+\draw [line width=2pt,color=ubqqys] (6,2)-- (0,2);
+\draw [line width=2pt,color=ubqqys] (0,2)-- (0,0);
+\end{axis}
+\end{tikzpicture}
+\end{document}

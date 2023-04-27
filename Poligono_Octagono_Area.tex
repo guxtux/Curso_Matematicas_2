@@ -1,0 +1,31 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-4.3,-4) grid (15.26,6.3);
+\clip(-4.3,-4) rectangle (15.26,6.3);
+\fill[line width=2pt,color=zzttqq] (0,0) -- (2,0) -- (3.414213562373095,1.414213562373095) -- (3.414213562373095,3.4142135623730945) -- (2,4.82842712474619) -- (0,4.82842712474619) -- (-1.414213562373095,3.4142135623730954) -- (-1.4142135623730954,1.4142135623730956) -- cycle;
+\draw [line width=2pt,color=zzttqq] (0,0)-- (2,0);
+\draw [line width=2pt,color=zzttqq] (2,0)-- (3.414213562373095,1.414213562373095);
+\draw [line width=2pt,color=zzttqq] (3.414213562373095,1.414213562373095)-- (3.414213562373095,3.4142135623730945);
+\draw [line width=2pt,color=zzttqq] (3.414213562373095,3.4142135623730945)-- (2,4.82842712474619);
+\draw [line width=2pt,color=zzttqq] (2,4.82842712474619)-- (0,4.82842712474619);
+\draw [line width=2pt,color=zzttqq] (0,4.82842712474619)-- (-1.414213562373095,3.4142135623730954);
+\draw [line width=2pt,color=zzttqq] (-1.414213562373095,3.4142135623730954)-- (-1.4142135623730954,1.4142135623730956);
+\draw [line width=2pt,color=zzttqq] (-1.4142135623730954,1.4142135623730956)-- (0,0);
+\draw [line width=2pt] (1,2.414213562373095)-- (1,0);
+\draw (0.36,-0.42) node[anchor=north west] {L = 60 m};
+\draw (1.36,1.76) node[anchor=north west] {a = 34 m};
+\begin{scriptsize}
+\draw [fill=uuuuuu] (1,0) circle (2pt);
+\draw [fill=uuuuuu] (1,2.414213562373095) circle (2pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

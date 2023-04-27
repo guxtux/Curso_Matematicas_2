@@ -1,0 +1,18 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-9.78,-5.72) rectangle (2.9,5.72);
+\draw [shift={(-4,0)},line width=2pt,color=zzttqq,fill=zzttqq,fill opacity=0.1] (0,0) -- (0.830315486258011:0.6) arc (0.830315486258011:135:0.6) -- cycle;
+\draw [line width=2pt] (-4,0) circle (2.7602898398537787cm);
+\draw [shift={(-4,0)},line width=2pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612]  (0,0) --  plot[domain=0.014491739065500022:2.356194490192345,variable=\t]({1*2.7602898398537787*cos(\t r)+0*2.7602898398537787*sin(\t r)},{0*2.7602898398537787*cos(\t r)+1*2.7602898398537787*sin(\t r)}) -- cycle ;
+\draw (-5.66,0.94) node[anchor=north west] {r};
+\draw (-3.66,1.82) node[anchor=north west] {$\theta$};
+\draw (-2.88,-0.12) node[anchor=north west] {r};
+\end{tikzpicture}
+\end{document}

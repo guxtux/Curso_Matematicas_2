@@ -1,0 +1,27 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-4.3,-4) grid (15.26,6.3);
+\clip(-4.3,-4) rectangle (15.26,6.3);
+\fill[line width=2pt,color=zzttqq] (0,0) -- (2,0) -- (3,1.7320508075688774) -- (2,3.4641016151377553) -- (0,3.4641016151377557) -- (-1,1.732050807568879) -- cycle;
+\draw [line width=2pt,color=zzttqq] (0,0)-- (2,0);
+\draw [line width=2pt,color=zzttqq] (2,0)-- (3,1.7320508075688774);
+\draw [line width=2pt,color=zzttqq] (3,1.7320508075688774)-- (2,3.4641016151377553);
+\draw [line width=2pt,color=zzttqq] (2,3.4641016151377553)-- (0,3.4641016151377557);
+\draw [line width=2pt,color=zzttqq] (0,3.4641016151377557)-- (-1,1.732050807568879);
+\draw [line width=2pt,color=zzttqq] (-1,1.732050807568879)-- (0,0);
+\draw (0.68,-0.12) node[anchor=north west] {L=2 m};
+\draw (2.84,1) node[anchor=north west] {L};
+\draw (2.88,3.12) node[anchor=north west] {L};
+\draw (1,4.08) node[anchor=north west] {L};
+\draw (-0.86,3.22) node[anchor=north west] {L};
+\draw (-0.94,1) node[anchor=north west] {L};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-9.78,-5.72) rectangle (9.78,5.72);
+\draw [line width=2pt] (0,0) circle (2.872211691362599cm);
+\draw [line width=2pt] (-2.3992468998863656,-1.5789915494978637)-- (2.423174388616523,1.5420200654832419);
+\draw [line width=2pt] (0,0)-- (-2.5689842350625667,1.2844921175312838);
+\draw [line width=2pt] (-5.48,1.76)-- (4.8,4.02);
+\draw [line width=2pt] (3.48,2.14)-- (-0.5,-3.96);
+\draw [shift={(0,0)},line width=2pt,color=ffqqqq]  plot[domain=3.922112806897843:4.492958420035007,variable=\t]({1*2.8722116913625984*cos(\t r)+0*2.8722116913625984*sin(\t r)},{0*2.8722116913625984*cos(\t r)+1*2.8722116913625984*sin(\t r)});
+\draw (-0.06,0.82) node[anchor=north west] {A};
+\draw (-1.7,0.62) node[anchor=north west] {B};
+\draw (-0.42,-0.42) node[anchor=north west] {C};
+\draw (-1.82,-2.68) node[anchor=north west] {D};
+\draw (-3.9,3.08) node[anchor=north west] {E};
+\draw (1.6,-1.04) node[anchor=north west] {F};
+\begin{scriptsize}
+\draw [fill=black] (0,0) circle (2.5pt);
+\draw [fill=black] (-2.040843206537579,-2.0210291948236208) circle (1pt);
+\draw [fill=black] (-0.6252054430119738,-2.8033405347956215) circle (1pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

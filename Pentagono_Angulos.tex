@@ -1,0 +1,37 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{ffqqff}{rgb}{1,0,1}
+\definecolor{qqttcc}{rgb}{0,0.2,0.8}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-9.78,-5.72) grid (9.78,5.72);
+\clip(-9.78,-5.72) rectangle (9.78,5.72);
+\fill[line width=2pt,color=zzttqq] (-2,-1) -- (1,-1) -- (1.9270509831248424,1.85316954888546) -- (-0.5,3.61652530576288) -- (-2.927050983124842,1.853169548885461) -- cycle;
+\draw [shift={(-0.5,1.30826265288144)},line width=2pt,color=ffqqqq,fill=ffqqqq,fill opacity=0.1] (0,0) -- (12.653876111494784:0.6) arc (12.653876111494784:90:0.6) -- cycle;
+\draw [shift={(-2.927050983124842,1.853169548885461)},line width=2pt,color=qqttcc,fill=qqttcc,fill opacity=0.1] (0,0) -- (-72:0.6) arc (-72:36:0.6) -- cycle;
+\draw [shift={(1,-1)},line width=2pt,color=ffqqff,fill=ffqqff,fill opacity=0.1] (0,0) -- (-0.7957235527392746:0.6) arc (-0.7957235527392746:72:0.6) -- cycle;
+\draw [line width=2pt,color=zzttqq] (-2,-1)-- (1,-1);
+\draw [line width=2pt,color=zzttqq] (1,-1)-- (1.9270509831248424,1.85316954888546);
+\draw [line width=2pt,color=zzttqq] (1.9270509831248424,1.85316954888546)-- (-0.5,3.61652530576288);
+\draw [line width=2pt,color=zzttqq] (-0.5,3.61652530576288)-- (-2.927050983124842,1.853169548885461);
+\draw [line width=2pt,color=zzttqq] (-2.927050983124842,1.853169548885461)-- (-2,-1);
+\draw [line width=2pt] (-0.5,3.61652530576288)-- (-0.5,1.30826265288144);
+\draw [line width=2pt] (-0.5,1.30826265288144)-- (1.9270509831248424,1.85316954888546);
+\draw [line width=2pt] (-0.5,1.30826265288144)-- (1,-1);
+\draw [line width=2pt] (-0.5,1.30826265288144)-- (-2,-1);
+\draw [line width=2pt] (-0.5,1.30826265288144)-- (-2.927050983124842,1.853169548885461);
+\draw [line width=2pt] (1,-1)-- (2.44,-1.02);
+\begin{scriptsize}
+\draw[color=ffqqqq] (0.22,2.23) node {$C$};
+\draw[color=qqttcc] (-2.06,1.43) node {$I$};
+\draw[color=ffqqff] (1.92,-0.39) node {$E$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
